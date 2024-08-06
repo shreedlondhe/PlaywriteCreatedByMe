@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-05T21:05:14.641707" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="c:\Users\admin\Poject\Test">
+<suite id="s1-s1" name="testSuite" source="c:\Users\admin\Poject\Test\testSuite.robot">
+<test id="s1-s1-t1" name="Open Facebook" line="8">
+<kw name="Open">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-08-05T21:05:15.471864" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\admin\\Poject\\browser\\traces\\3be7b1da-5f12-46b6-8efd-83f2b67e4127"}</msg>
+<msg time="2024-08-05T21:05:16.590389" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\admin\\Poject\\browser\\traces\\3be7b1da-5f12-46b6-8efd-83f2b67e4127"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-08-05T21:05:15.471864" elapsed="1.118525"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-08-05T21:05:22.031432" level="INFO">Successfully initialized new page object and opened url: https://www.facebook.com</msg>
+<msg time="2024-08-05T21:05:22.031432" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-08-05T21:05:16.590389" elapsed="5.442069"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-08-05T21:05:22.032458" level="INFO">Fills the text 'shreedlondhe@gmail.com' in the given field.</msg>
+<arg>//*[@id="email"]</arg>
+<arg>shreedlondhe@gmail.com</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-08-05T21:05:22.032458" elapsed="0.043657"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-08-05T21:05:22.076115" level="INFO">Fills the text 'Shree@6517' in the given field.</msg>
+<arg>//*[@id="pass"]</arg>
+<arg>Shree@6517</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-08-05T21:05:22.076115" elapsed="0.018334"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-08-05T21:05:22.094449" level="INFO">Clicks the element '//button[@name='login']'.</msg>
+<arg>//button[@name='login']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-08-05T21:05:22.094449" elapsed="0.081606"/>
+</kw>
+<status status="PASS" start="2024-08-05T21:05:15.471864" elapsed="6.704191"/>
+</kw>
+<status status="PASS" start="2024-08-05T21:05:15.471864" elapsed="6.704191"/>
+</test>
+<status status="PASS" start="2024-08-05T21:05:15.456210" elapsed="8.268367"/>
+</suite>
+<status status="PASS" start="2024-08-05T21:05:14.641707" elapsed="9.089426"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="testSuite">Test.testSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
