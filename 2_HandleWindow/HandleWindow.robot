@@ -7,8 +7,9 @@ ${URL}            https://demoqa.com/browser-windows
 *** Test Cases ***
 Handle window
     New Browser    headless=False
+    #adding implecit wait of 10 sec
+    Set Browser Timeout    20s
     New Page    ${URL}
-    sleep    7s
     Click    //button[.='New Tab']
     log    clicked on new tab
     sleep    3s

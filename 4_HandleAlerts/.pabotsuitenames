@@ -1,0 +1,8 @@
+datasources:d9dcfa09913a690a3ab163c435aa16e8fcab6cd9
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:5c2cb65f9b58d50ca3d7f55320f06f5e9a62cd53
+--test Poject.1 OpenBrowser.Openbrowser.Open Facebook
+--test Poject.2 HandleWindow.HandleWindow.Handle window
+--test Poject.3 HandleFrame.HandleFrame.HandleFrame
+--test Poject.4 HandleAlerts.HandleAlerts.HandleAlerts
