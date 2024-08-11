@@ -11,6 +11,7 @@ Open Facebook
 *** Keywords ***
 Open
     New Browser    headless=False
+    Set Browser Timeout    20s
     New Page    ${URL}
     Fill Text    //*[@id="email"]    shreedlondhe@gmail.com
     Fill Text    //*[@id="pass"]    Shree@6517
