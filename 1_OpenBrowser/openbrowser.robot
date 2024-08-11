@@ -16,3 +16,4 @@ Open
     Fill Text    //*[@id="email"]    shreedlondhe@gmail.com
     Fill Text    //*[@id="pass"]    Shree@6517
     Click    //button[@name='login']
+    log    passed test case of login facebook
