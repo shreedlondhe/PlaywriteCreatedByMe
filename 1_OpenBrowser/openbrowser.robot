@@ -91,5 +91,29 @@ Handle Exception With Try Except
 
 
 ******
+___Assertion___
+*** Test Cases ***
+Verify Current Url
+    New Page    https://example.com
+    ${url}=     Get Url
+    Should Be Equal    ${url}    https://example.com
+
+Should Be Equal    ${var1}    ${var2}
+Should Not Be Equal    ${var1}    ${var2}
+Should Be True    ${condition}
+Should Be False    ${condition}
+Should Be Empty    ${list}
+Should Not Be Empty    ${list}
+Should Contain    ${string}    substring
+Should Not Contain    ${string}    substring
+Should Be Equal As Numbers    ${num1}    ${num2}
+Should Be Equal As Strings    ${string1}    ${string2}
+
+**** from playwright ****
+
+Text Should Be Present    expected text
+Element Should Be Visible    selector
+Element Should Contain    selector    expected text
+Title Should Be    expected title
 
 
